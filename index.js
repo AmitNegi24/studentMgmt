@@ -4,6 +4,10 @@ const route = require("../studentMgmt/route")
 const  mongoose  = require("mongoose");
 const app = express();
 
+var cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
 
